@@ -308,17 +308,17 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 /* College Admissions Image Section */
 .admissions-image-section {
     background-color: var(--color-primary);
-    padding: var(--spacing-xl) 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .admissions-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 /* Academic Calendar */

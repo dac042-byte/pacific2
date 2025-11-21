@@ -305,111 +305,20 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     color: var(--color-text-light);
 }
 
-/* College Admissions */
-.admissions-parallax {
-    position: relative;
-    overflow: hidden;
-    min-height: 800px;
+/* College Admissions Image Section */
+.admissions-image-section {
+    background-color: var(--color-primary);
+    padding: var(--spacing-xl) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.admissions-parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://static.wixstatic.com/media/f9330d_68b9b940f8894c8591873ab07a8ae18f~mv2.png/v1/fill/w_1920,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f9330d_68b9b940f8894c8591873ab07a8ae18f~mv2.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-.admissions-parallax-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(12, 60, 96, 0.92) 0%, rgba(57, 110, 155, 0.88) 50%, rgba(30, 171, 199, 0.85) 100%);
-    z-index: 1;
-}
-
-.admissions-content {
-    position: relative;
-    z-index: 2;
-}
-
-.admissions-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-    text-align: center;
-}
-
-.stat-card {
-    background-color: rgba(12, 60, 96, 0.8);
-    color: var(--color-white);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-}
-
-.stat-number {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--color-accent);
+.admissions-image {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-bottom: var(--spacing-xs);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.stat-label {
-    font-size: 1rem;
-    color: var(--color-white);
-}
-
-.admissions-parallax .section-title {
-    color: var(--color-white);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.college-list {
-    margin-top: var(--spacing-lg);
-    padding: var(--spacing-lg);
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-}
-
-.college-list h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-}
-
-.college-list ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-sm);
-    list-style: none;
-}
-
-.college-list li {
-    padding: var(--spacing-xs);
-    border-left: 3px solid var(--color-accent);
-    padding-left: var(--spacing-sm);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 /* Academic Calendar */
@@ -560,16 +469,6 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 
     .carousel-caption {
         padding: var(--spacing-md) var(--spacing-sm);
-    }
-
-    /* Disable parallax on mobile for better performance */
-    .admissions-parallax-bg {
-        background-attachment: scroll;
-        background-size: cover;
-    }
-
-    .admissions-parallax {
-        min-height: auto;
     }
 }
 
